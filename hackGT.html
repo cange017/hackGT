@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html>
+ 
+<head>
+<link  href="hackGT.css" rel="stylesheet"/>
+<script src="hackGT.js"></script>
+</head>
     
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Helvetica | Lato| Neue|Great+Vibes|Julius+Sans+One|Prata|Quicksand|Sacramento" rel="stylesheet">
-  <head>
-    <style>
-       /* Set the size of the div element that contains the map */
-      #map {
-        height: 400px;  
-        width: 100%;  
-       }
-    </style>
-  </head>
+<body>
     
-  <body>
-    <h3>Map</h3>
-    <!--The div element for the map -->
-    <div id="map"></div>
-    <script>
-        
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: 33.7490, lng: -84.3880};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
-    </script>
+<h3>Map</h3>
+<!--The div element for the map -->
+<div id="map"></div>
+
+<article>
+   
+<!-- <img id="line" src="line.png"> -->
+<h2> How does it work?</h2>
+<p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae fringilla enim. Nulla quis felis ligula. Maecenas facilisis diam nisl, feugiat venenatis purus rhoncus nec. Vestibulum cursus, ex consectetur porta porttitor, quam leo scelerisque diam, at bibendum nulla dolor ac lacus. Nam bibendum vitae nunc ut efficitur. Nulla finibus ex id placerat vestibulum. In suscipit erat nec ultrices sodales.</p>
+    
+    
+</article>
+    
+    
+    
     <!--Load the API from the specified URL
     * The async attribute allows the browser to render the page while the API loads
-    * The key parameter will contain your own API key (which is not needed for this tutorial)
     * The callback parameter executes the initMap() function
     -->
-    <script async defer
+<script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbtw48JgTX8DnDKLAr5Z_BnH0mvB3CeeQ&callback=initMap">
-    </script>
-      
-  </body>
+</script>
+    
+<footer>
+
+<p id = "contact">Contact Us:</p>
+
+<p id="contact">Github: cange017/hackGT</p>
+    
+    
+</footer>
+</body>
 </html>
